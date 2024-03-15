@@ -35,7 +35,7 @@
                 </li>
             </ul>
             <div class="cta-buttons">
-                <a href="/">Log in</a>
+                <a href="/login.html">Log in</a>
                 <button class="btn-primary">Try for free</button>
             </div>
         </nav>
@@ -56,7 +56,12 @@
                 </p>
             </header>
             <div class="cta-buttons">
-                <button class="btn-primary">Sign up</button>
+                <button class="btn-primary" id="signup-btn">Sign up</button>
+                    <script>
+                        document.getElementById("signup-btn").addEventListener("click", function() {
+                            window.location.href = "/sign_up.html";
+                        });
+                    </script>
                 <a href="/" class="link-secondary">Learn more</a>
             </div>
             <section class="frame">
