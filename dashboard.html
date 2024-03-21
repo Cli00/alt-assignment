@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="\index.css" rel="stylesheet">
+    <link href="\faq.css" rel="stylesheet">
+    <link href="\index.js" rel="javascript">
+    <title>Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="./media/logo-blue.svg" alt="scissor logo" />
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="">My URLs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Features</a>
+                    <button><img src="./media/chevron-down.svg" alt="scissor logo" /></button>
+                </li>
+                <li class="nav-item">
+                    <a href="">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">Analytics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <section class="faq">
+            <header>
+                <img src="./media/stroke.svg" alt="" />
+                <h2>TOOLS</h2>
+            </header>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">
+                            URL Shortening
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <form id="registration-form" action="https://sissors-1.onrender.com/Shorten" method="POST">
+                            <label for="text">URL:</label>
+                            <input type="text" id="text" name="text" required>
+                            <a href="/sign_up.html">Shorten</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">
+                            HISTORY
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <form id="registration-form" action="https://sissors-1.onrender.com/history/{user_id}" method="POST">
+                            <label for="number">USER ID:</label>
+                            <input type="number" id="number" name="number" required>
+                            <a href="/sign_up.html">Shorten</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                        <span class="accordion-title">
+                            Analytics
+                        </span>
+                        <!-- <span class="icon" aria-hidden="true"></span> -->
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <form id="registration-form" action="https://sissors-1.onrender.com/analytics/id/{url_id}" method="POST">
+                            <label for="number">URL ID:</label>
+                            <input type="number" id="number" name="number" required>
+                            <a href="/sign_up.html">Shorten</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false">
+                        <span class="accordion-title">
+                            Are there any limitations on the number of URLs I can shorten?
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">
+                            Can I customize the shortened URLs to reflect my brand or
+                            content?
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">
+                            Can I track the performance of my shortened URLs?
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">
+                            How secure is the URL shortening service? Are the shortened
+                            links protected against spam or malicious activity?
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">
+                            What is a QR code and what can it do?
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                        <span class="accordion-title">
+                            Is there an API available for integrating the URL shortening
+                            service into my own applications or websites?
+                        </span>
+                        <i class="fa-solid fa-plus icon" style="color: #141414"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sapiente, illo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero-small">
+            <h1>Revolutionizing Link Optimization</h1>
+            <button class="btn-primary">Get Started</button>
+        </section>
+        <footer>
+            <div class="container">
+                <section class="logo-socials">
+                    <div>
+                        <img src="./media/logo-black.svg" alt="logo" />
+                    </div>
+                    <div class="socials">
+                        <img src="/media/twitter.svg" alt="twitter icon" />
+                        <img src="/media/instagram.svg" alt="instagram icon" />
+                        <img src="/media/linkedin.svg" alt="linkedin icon" />
+                        <img src="/media/facebook.svg" alt="facebook icon" />
+                    </div>
+                </section>
+                <section class="extra-links">
+                    <div class="extra">
+                        <p class="title">Why Scissor ?</p>
+                        <div>
+                            <p>Scissor 101</p>
+                            <p>Integrations & API</p>
+                            <p>Pricing</p>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <p class="title">Solutions</p>
+                        <div>
+                            <p>Social Media</p>
+                            <p>Digital Marketing</p>
+                            <p>Customer Service</p>
+                            <p>For Developers</p>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <p class="title">Products</p>
+                        <div>
+                            <p>Link Management</p>
+                            <p>QR Codes</p>
+                            <p>Link-in-bio</p>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <p class="title">Company</p>
+                        <div>
+                            <p>About Scissor</p>
+                            <p>Careers</p>
+                            <p>Partners</p>
+                            <p>Press</p>
+                            <p>Contact</p>
+                            <p>Reviews</p>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <p class="title">Resources</p>
+                        <div>
+                            <p>Blog</p>
+                            <p>Resource Library</p>
+                            <p>Developers</p>
+                            <p>App Connectors</p>
+                            <p>Support</p>
+                            <p>Trust Center</p>
+                            <p>Browser Extension</p>
+                            <p>Mobile App</p>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <p class="title">Features</p>
+                        <div>
+                            <p>Branded Links</p>
+                            <p>Mobile Links</p>
+                            <p>Campaign</p>
+                            <p>Management & Analytics</p>
+                            <p>QR Code generation</p>
+                        </div>
+                    </div>
+                    <div class="extra">
+                        <p class="title">Legal</p>
+                        <div>
+                            <p>Privacy Policy</p>
+                            <p>Cookie Policy</p>
+                            <p>Terms of Service</p>
+                            <p>Acceptable Use Policy</p>
+                            <p>Code of Conduct</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="copyright">
+                <span>Terms of service</span>
+                <span>|</span>
+                <span>Security</span>
+                <span>|</span>
+                <span>Scissor 2023</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
